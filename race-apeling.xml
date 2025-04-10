@@ -31,11 +31,11 @@
                 <span class="feature">Alignment.</span>Apelings' love for adventure and energetic personalities often cause them to be more chaotic.<br/>
                 <span class="feature">Size.</span>Apelings are taller but weigh about as much as most humans. Your size is Medium.<br/>
                 <span class="feature">Speed.</span>Your base walking speed is 35 feet.<br/>
-                <span class="feature">Adept Climbers.</span>Your natural agility allows you to climb at full speed, rather than half. You can also climb across ceilings, but must succeed on either a DC 12 Athletics or Acrobatics check; failing causes you to lose your grip and fall.<br/>
-                <span class="feature">Empty Stomach.</span>You burn through your energy faster than most humanoids and must eat twice as much as a normal human requires each day.<br/>
-                <span class="feature">Heavy Slumber.</span>During a long rest, anyone trying to wake you up must make a DC 10 Charisma ability check. Taking damage will wake you up as will being thrown into or splashed with water.<br/>
-                <span class="feature">Limit Break.</span>Apelings are always striving to push themselves. As a reaction, when you fail Strength, Dexterity or Constitution ability check or saving throw, you can remake the check and take the new result. Once you use this ability, you can't use it again until you complete a long rest.<br/>
-                <span class="feature">Skills of the Primate.</span>Choose one: you gain proficiency in either Acrobatics or Athletics. Additionally, you can use your feet and tail as if they were hands; however, if you use both feet simultaneously for an action, your speed becomes 0 for that action.<br/>
+                <span class="feature">Adept Climbers.</span> Your natural agility allows you to climb at full speed, rather than half. You can also climb across ceilings, but must succeed on either a DC 12 Athletics or Acrobatics check; failing causes you to lose your grip and fall.<br/>
+                <span class="feature">Empty Stomach.</span> You burn through your energy faster than most humanoids and must eat twice as much as a normal human requires each day.<br/>
+                <span class="feature">Heavy Slumber.</span> During a long rest, anyone trying to wake you up must make a DC 10 Charisma ability check. Taking damage will wake you up as will being thrown into or splashed with water.<br/>
+                <span class="feature">Limit Break.</span> Apelings are always striving to push themselves. As a reaction, when you fail Strength, Dexterity or Constitution ability check or saving throw, you can remake the check and take the new result. Once you use this ability, you can't use it again until you complete a long rest.<br/>
+                <span class="feature">Skills of the Primate.</span> Choose one: you gain proficiency in either Acrobatics or Athletics. Additionally, you can use your feet and tail as if they were hands; however, if you use both feet simultaneously for an action, your speed becomes 0 for that action.<br/>
                 <span class="feature">Darkvision.</span> You can see in dim light within 60 feet as if it were bright light, and in darkness as if it were dim (perceiving only shades of gray).<br/>
                 <span class="feature">Languages.</span> You can speak, read and write Common and one other language of your choice.<br/>
             </p>
@@ -53,6 +53,7 @@
             
             <!-- Movement -->
             <stat name="innate speed" value="35" bonus="base"/>
+            <stat name="climb" value="30" bonus="racial"/>
             
             <!-- Vision: Darkvision -->
             <stat name="darkvision" value="60" bonus="racial"/>
@@ -69,6 +70,7 @@
             <grant type="Racial Trait" id="ID_WIKI_RACIAL_TRAIT_APELING_HEAVY_SLUMBER" />
             <grant type="Racial Trait" id="ID_WIKI_RACIAL_TRAIT_APELING_LIMIT_BREAK" />
             <grant type="Racial Trait" id="ID_WIKI_RACIAL_TRAIT_APELING_SKILLS_OF_THE_PRIMATE" />
+            <grant type="Racial Trait" id="ID_WIKI_RACIAL_TRAIT_APELING_EAGER_MIND" />
         </rules>
     </element>
 
@@ -117,6 +119,14 @@
                 <option>Athletics</option>
             </select>
         </rules>
+    </element>
+    <element name="Eager Mind" type="Racial Trait" source="D&amp;D Wiki" id="ID_WIKI_RACIAL_TRAIT_APELING_EAGER_MIND">
+        <description>
+            <p>If you encounter someone with a skill proficiency you lack and they agree to teach you, you can spend a short or long rest to learn that proficiency. However, you lose that proficiency at the end of your next long rest. You may only gain one such proficiency this way at a time.</p>
+        </description>
+        <sheet>
+            <description>If you encounter someone with a skill proficiency you lack and they agree to teach you, you can spend a short or long rest to learn that proficiency. However, you lose that proficiency at the end of your next long rest. You may only gain one such proficiency this way at a time.</description>
+        </sheet>
     </element>
 </elements>
 
