@@ -47,24 +47,15 @@
             <set name="names-format">{{name}}</set>
         </setters>
         <rules>
-            <!-- Ability Score Increases -->
             <stat name="dexterity" value="2"/>
             <stat name="charisma" value="1"/>
-            
-            <!-- Movement -->
             <stat name="innate speed" value="35" bonus="base"/>
             <stat name="climb" value="30" bonus="racial"/>
-            
-            <!-- Vision: Darkvision -->
             <stat name="darkvision" value="60" bonus="racial"/>
             <grant type="Vision" id="ID_VISION_DARKVISION" />
-            
-            <!-- Grants -->
             <grant type="Size" id="ID_SIZE_MEDIUM" />
             <grant type="Language" id="ID_LANGUAGE_COMMON" />
             <select type="Language" name="Language (Apeling)" />
-            
-            <!-- Racial Traits Grants -->
             <grant type="Racial Trait" id="ID_WIKI_RACIAL_TRAIT_APELING_ADEPT_CLIMBERS" />
             <grant type="Racial Trait" id="ID_WIKI_RACIAL_TRAIT_APELING_EMPTY_STOMACH" />
             <grant type="Racial Trait" id="ID_WIKI_RACIAL_TRAIT_APELING_HEAVY_SLUMBER" />
@@ -114,7 +105,7 @@
         </description>
         <sheet display="false" />
         <rules>
-            <select type="Proficiency" name="Skills of the Primate" supports="Skill" number="1">
+            <select type="Proficiency" name="Skills of the Primate" supports="ID_PROFICIENCY_SKILL_ACROBATICS|ID_PROFICIENCY_SKILL_ATHLETICS" number="1">
                 <option>Acrobatics</option>
                 <option>Athletics</option>
             </select>
@@ -129,4 +120,3 @@
         </sheet>
     </element>
 </elements>
-
